@@ -1,0 +1,203 @@
+.content {
+    margin: $m-1;
+    max-width: 100vw;
+    margin: 0 auto;
+
+    &-popular {
+        max-width: 1120px;
+        margin-top: $m-1;
+        margin: auto;
+
+        &__lists {
+            @include flex_e();
+            &_list {
+                background-color: $very-light-gray;
+                border-radius: 20px;
+                width: calc(100%/3);
+                margin:$m-1;
+
+                &--title {
+                    padding: $p-1r 0 $p-1r $p-1r;
+                    
+                }
+
+                &--title a {
+                    padding: $p-1r 0 $p-1r $p-1r;
+                    color: $black;
+                }
+                 &--title a:hover {
+                    padding: $p-1r 0 $p-1r $p-1r;
+                    color: $yellow;
+                    font-weight: $font-w-700;
+                }
+                &--price {
+                    padding: $p-2r $p-1r $p-1r $p-1r;
+                    font-weight: $font-w-700;
+                    text-align:right;
+                    margin-top: -60px;
+                }
+                &--img {
+                    text-align: center;
+                    padding: $p-1r;
+                    
+
+                }
+                &--img img {
+                    text-align: center;
+                    padding: $p-1r;
+
+                }
+            }
+        }
+    }
+    &-hits {
+        max-width: 1120px;
+        margin-top: $m-1;
+        margin: auto;
+
+        &__title {
+            font-size: $font-32;
+            font-weight: $font-w-700;
+            padding: $p-1r;
+        }
+
+        &__lists {
+            @include flex_e();
+
+            &_list {
+                width: calc(100%/5);
+                margin: $m-1;
+
+                &--img {
+                    text-align: center;
+                    margin: $m-1;
+                    height: 200px;
+                                        
+                }
+                &--price {
+                    font-weight: $font-w-900;
+                    font-size: $font-18;
+                    padding: $p-0-5r;
+
+                }
+                &--price s {
+                    font-weight: $font-w-500;
+                    font-size: $font-14;
+                    padding: $p-0-5r;
+
+                }
+                &--description a {
+                    font-weight: $font-w-400;
+                    font-size: $font-14;
+                    padding: $p-0-5r;
+                    color: $black;
+                                      
+
+                }
+                &--description a:hover {
+                    font-weight: $font-w-700;
+                    font-size: $font-14;
+                    padding: $p-0-5r;
+                    color: $yellow;
+                    transition: all .3s;
+                                      
+
+                }
+            }
+        }
+        &__button {
+            text-align: center;
+            margin: $m-2;
+
+            &_btn {
+                background-color: $very-light-gray;
+                width: 220px;
+                height: $font-46;
+                border: 1px solid $white;
+                border-radius: $font-28;
+                text-align: center;
+                font-weight: $font-w-500;
+
+            }
+            &_btn:hover {
+                background-color: $yellow;
+                width: 240px;
+                height: $font-46;
+                border: 1px solid $yellow;
+                border-radius: $font-28;
+                text-align: center;
+                font-weight: $font-w-700;
+
+            }
+
+        }
+    }
+    &-firms {
+        max-width: 1296px;
+        margin: $m-1;
+        margin: auto;
+
+        &__lists {
+            @include flex_e();
+
+            &_list {
+                margin: $m-0-5;
+            }
+        }
+        
+    }
+    &-reviews {
+        max-width: 1120px;
+        margin-top: $m-1;
+        margin: auto;
+
+        &__title {
+            font-size: $font-32;
+            font-weight: $font-w-700;
+            margin: $m-1;
+            padding: $p-1r;
+        }
+        &__lists {
+            @include flex_e();
+            &_list {
+                text-align: center;
+                margin: $m-1;
+
+            }
+            &_list a {
+                text-align: center;
+                margin: $m-1;
+                color: $black;
+
+            }
+              &_list a:hover {
+                text-align: center;
+                margin: $m-1;
+                color: $yellow;
+                font-weight: $font-w-700;
+
+            }
+             
+        }
+    }
+    &-instagram {
+        max-width: 1120px;
+        margin-top: $m-1;
+        margin: auto;
+
+        &__title {
+            font-weight: $font-w-700;
+            font-size: $font-32;
+            margin: $m-1;
+
+        }
+       
+        &__lists {
+            @include flex_b();
+            margin: $m-1;
+            &_list {
+                margin: $m-0-5;
+            }
+        }
+    }
+}

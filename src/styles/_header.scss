@@ -1,0 +1,148 @@
+.header {
+    background-color: $black;
+    max-width: 100vw;
+    margin: auto;
+    height: 168px;
+    
+  &-top {
+    @include flex_e();
+    padding:$p-1r;
+
+    &__select {
+        width:73px;
+        height:24px;
+        
+
+        &_selector {
+            text-align: left;
+            background-color: $gray;
+            font-size: $font-14;
+            border-radius: 31px;
+            padding: $p-4 $p-8;
+            color: $white;
+
+                    
+        }
+        
+    }
+    &__phones {
+        &_lists {
+            @include flex_e();
+
+            &--list a {
+                color:$white;
+                font-weight: $font-w-500;
+                margin: $m-1;
+                font-size: $font-14;
+
+            }
+            &--list a:hover {
+                color:$yellow;
+                font-weight: $font-w-700;
+                margin: $m-1;
+                font-size: $font-14;
+                transition: all .3s;
+
+            }
+        }
+    }
+    &__links {
+        &_lists {
+            @include flex_e();
+
+            &--link a {
+                text-align: center;
+                color:$light-gray;
+                font-weight: $font-w-400;
+                font-size: $font-14;
+                margin: $m-1;
+                text-decoration: underline;
+
+            }
+            &--link a:hover {
+                text-align: center;
+                color:$yellow;
+                font-weight: $font-w-700;
+                font-size: $font-14;
+                margin: $m-1;
+                text-decoration: underline;
+                transition: all .3s;
+
+            }
+        }
+    }
+  }
+
+  &-bottom {
+    @include flex_e();
+    padding:$p-1r;
+    &__btn {
+        &_category {
+            height:46px;
+            width:148px;
+            font-size: $font-18;
+            font-weight: $font-w-500;
+            border-radius: $font-8;
+            background-color: $yellow;
+
+            &:hover {
+                height:46px;
+                width:148px;
+                font-size: $font-18;
+                font-weight: $font-w-700;
+                border-radius: $font-8;
+                background-color: $yellow;
+            }
+        }
+    }
+    &__title a {
+        font-weight: $font-w-900;
+        font-size: $font-32;
+        color:$white;
+        text-align: left;
+    }
+    &__search {
+        
+        &_insert {
+            width:459px;
+            height:56px;
+            background-color: $gray;
+            border-radius: 60px;
+            
+        }
+        &_insert::placeholder {
+            padding:$p-1r;
+            
+        }
+       
+    }
+    &__menu {
+        &_lists {
+            @include flex_e();
+
+            &--link {
+                margin:$m-1;
+            }
+            &--link:hover {
+                margin:$m-1;
+                color:$yellow;
+                transition: all .3s;
+            }
+            &--link p{
+                color:$white;
+                text-align: center;
+                font-size: $font-14;
+              
+            }
+            &--link p:hover{
+                color:$yellow;
+                text-align: center;
+                font-size: $font-14;
+                font-weight: $font-w-700;
+                transition: all .3s;
+              
+            }
+        }
+    }
+  }
+}

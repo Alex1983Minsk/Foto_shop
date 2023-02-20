@@ -1,0 +1,53 @@
+.swiper {
+  max-width: 90vw;
+  margin: 0 auto;
+  z-index: 1;
+        
+}
+
+.products_slide {
+  @include flex_b();
+     
+}
+
+.product_slide {
+  position: relative;
+  max-width: 1120;
+  margin: $m-1;
+  padding: $p-1r;
+
+  background-image: url('../img/images/background_NikonZ7II.png');
+  height: 360px;
+  color: $white;
+
+  &--title {
+    color:$white;
+    font-size: 32px;
+    font-weight: $font-w-700;
+    padding: $p-7r 0 0 $p-1r;
+  }
+  &--description {
+    color:$very-light-gray;
+    font-size: 16px;
+    font-weight: $font-w-500;
+    padding: $p-2r 0 0 $p-1r;
+  }
+  &--more {
+    padding: $p-2r 0 0 $p-1r;
+               
+  }
+  &--more button {
+        border: 1px solid $yellow;
+        border-radius: 28px;
+        color: $yellow;
+        font-size: 14px;
+        font-weight: $font-w-500;
+
+        width: 220px;
+        height: 46px;
+        background-color: rgba(0,0,0,0);
+  }
+
+  
+}
+
