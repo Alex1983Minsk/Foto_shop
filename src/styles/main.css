@@ -62,7 +62,7 @@ input {
 }
 
 .swiper {
-  max-width: 90vw;
+  max-width: 1296px;
   margin: 0 auto;
   z-index: 1;
 }
@@ -116,13 +116,14 @@ input {
 }
 .header-top {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
 }
 .header-top__select {
   width: 73px;
   height: 24px;
+  text-align: left;
 }
 .header-top__select_selector {
   text-align: left;
@@ -174,7 +175,7 @@ input {
 }
 .header-bottom {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
 }
@@ -250,7 +251,7 @@ input {
 }
 .content-popular__lists {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .content-popular__lists_list {
@@ -297,7 +298,7 @@ input {
 }
 .content-hits__lists {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .content-hits__lists_list {
@@ -361,7 +362,7 @@ input {
 }
 .content-firms__lists {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .content-firms__lists_list {
@@ -380,7 +381,7 @@ input {
 }
 .content-reviews__lists {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .content-reviews__lists_list {

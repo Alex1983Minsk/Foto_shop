@@ -5,12 +5,13 @@
     height: 168px;
     
   &-top {
-    @include flex_e();
-    padding:$p-1r;
+    @include flex_b();
+    padding: $p-1r;
 
     &__select {
         width:73px;
         height:24px;
+        text-align: left;
         
 
         &_selector {
@@ -74,7 +75,7 @@
   }
 
   &-bottom {
-    @include flex_e();
+    @include flex_b();
     padding:$p-1r;
     &__btn {
         &_category {
