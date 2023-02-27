@@ -10,41 +10,104 @@
 
         &__lists {
             @include flex_b();
+
+            @media (max-width:815px) {
+                flex-wrap: wrap;
+            }
+            @media (max-width:468px) {
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
             &_list {
                 background-color: $very-light-gray;
                 border-radius: 20px;
                 width: calc(100%/3);
                 margin:$m-1;
 
-                &--title {
-                    padding: $p-1r 0 $p-1r $p-1r;
+                @media (max-width:815px) {
+                    border-radius: 15px;
+                    
+                }
+                @media (max-width:468px) {
+                    border-radius: 10px;
                     
                 }
 
+                &--title {
+                    padding: $p-0-5r 0 $p-0-5r $p-0-5r;
+                    font-size: $font-14;
+
+                    @media (max-width:815px) {
+                        font-size: $font-12;
+                    }
+                    @media (max-width:468px) {
+                        font-size: $font-10;
+                      
+                    }
+
+                }
+
                 &--title a {
-                    padding: $p-1r 0 $p-1r $p-1r;
+                    padding: $p-0-5r 0 $p-0-5r $p-0-5r;
                     color: $black;
+                    font-size: $font-14;
+
+                    @media (max-width:815px) {
+                        font-size: $font-12;
+                    }
+                    @media (max-width:468px) {
+                        font-size: $font-10;
+                      
+                    }
                 }
                  &--title a:hover {
-                    padding: $p-1r 0 $p-1r $p-1r;
+                    padding: $p-0-5r 0 $p-0-5r $p-0-5r;
                     color: $yellow;
+                    font-size: $font-14;
                     font-weight: $font-w-700;
+
+                    @media (max-width:815px) {
+                        font-weight: $font-w-500;
+                        font-size: $font-12;
+                    }
+                    @media (max-width:468px) {
+                        font-weight: $font-w-500;
+                        font-size: $font-10;
+                       
+                    }
                 }
                 &--price {
-                    padding: $p-2r $p-1r $p-1r $p-1r;
+                    padding: $p-1r $p-0-5r $p-0-5r $p-0-5r;
                     font-weight: $font-w-700;
+                    font-size: $font-14;
                     text-align:right;
-                    margin-top: -60px;
+                    margin-top: -35px;
+                    
+
+                    @media (max-width:815px) {
+                        font-size: $font-12;
+                    }
+                    @media (max-width:468px) {
+                        font-size: $font-10;
+                    }
                 }
                 &--img {
                     text-align: center;
                     padding: $p-1r;
-                    
 
                 }
                 &--img img {
                     text-align: center;
                     padding: $p-1r;
+
+                    @media (max-width:815px) {
+                        width:100%;
+                        padding: $p-0-5r;
+                    }
+                    @media (max-width:468px) {
+                        width:100%;
+                        padding: $p-0-5r;
+                    }
 
                 }
             }
@@ -59,31 +122,94 @@
             font-size: $font-32;
             font-weight: $font-w-700;
             padding: $p-1r;
+
+            @media (max-width:815px) {
+                font-weight: $font-w-500;
+                font-size: $font-26;
+            }
+            @media (max-width:468px) {
+                font-weight: $font-w-400;
+                font-size: $font-20;
+                text-align: center;
+            }
         }
 
         &__lists {
             @include flex_b();
 
+            @media (max-width:815px) {
+                flex-wrap: wrap;
+            }
+            @media (max-width:468px) {
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
             &_list {
                 width: calc(100%/5);
                 margin: $m-1;
+
+                @media (max-width:815px) {
+                    margin: $m-0-5;
+                }
+                @media (max-width:468px) {
+                    margin: $m-0-5;
+                }
 
                 &--img {
                     text-align: center;
                     margin: $m-1;
                     height: 200px;
+
+                    @media (max-width:815px) {
+                        height: 150px;
+                    }
+                    @media (max-width:468px) {
+                        height: 100px;
+                    }
+                                        
+                }
+
+                &--img img {
+                    text-align: center;
+                    margin: $m-1;
+                    height: 200px;
+
+                    @media (max-width:815px) {
+                        height: 150px;
+                    }
+                    @media (max-width:468px) {
+                        height: 100px;
+                    }
                                         
                 }
                 &--price {
                     font-weight: $font-w-900;
                     font-size: $font-18;
                     padding: $p-0-5r;
-
+                    
+                    @media (max-width:815px) {
+                        font-weight: $font-w-700;
+                        font-size: $font-16;
+                    }
+                    @media (max-width:468px) {
+                        font-weight: $font-w-500;
+                        font-size: $font-14;
+                    }
                 }
                 &--price s {
                     font-weight: $font-w-500;
                     font-size: $font-14;
                     padding: $p-0-5r;
+
+                    @media (max-width:815px) {
+                        font-weight: $font-w-400;
+                        font-size: $font-12;
+                    }
+                    @media (max-width:468px) {
+                        font-weight: $font-w-300;
+                        font-size: $font-10;
+                    }
 
                 }
                 &--description a {
@@ -91,6 +217,15 @@
                     font-size: $font-14;
                     padding: $p-0-5r;
                     color: $black;
+
+                    @media (max-width:815px) {
+                        font-weight: $font-w-300;
+                        font-size: $font-12;
+                    }
+                    @media (max-width:468px) {
+                        font-weight: $font-w-100;
+                        font-size: $font-10;
+                    }
                                       
 
                 }
@@ -100,6 +235,15 @@
                     padding: $p-0-5r;
                     color: $yellow;
                     transition: all .3s;
+
+                    @media (max-width:815px) {
+                        font-weight: $font-w-400;
+                        font-size: $font-12;
+                    }
+                    @media (max-width:468px) {
+                        font-weight: $font-w-300;
+                        font-size: $font-10;
+                    }
                                       
 
                 }
@@ -118,6 +262,17 @@
                 text-align: center;
                 font-weight: $font-w-500;
 
+                @media (max-width:815px) {
+                    width: 180px;
+                    height: $font-26;
+                    border-radius: $font-26;
+                }
+                @media (max-width:468px) {
+                    width: 160px;
+                    height: $font-20;
+                    border-radius: $font-20;
+                }
+
             }
             &_btn:hover {
                 background-color: $yellow;
@@ -127,6 +282,17 @@
                 border-radius: $font-28;
                 text-align: center;
                 font-weight: $font-w-700;
+
+                @media (max-width:815px) {
+                    width: 180px;
+                    height: $font-26;
+                    border-radius: $font-26;
+                }
+                @media (max-width:468px) {
+                    width: 160px;
+                    height: $font-20;
+                    border-radius: $font-20;
+                }
 
             }
 
@@ -140,8 +306,24 @@
         &__lists {
             @include flex_b();
 
-            &_list {
+            @media (max-width:815px) {
+                flex-wrap: wrap;
+                
+            }
+            @media (max-width:468px) {
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
+            &_list img {
                 margin: $m-0-5;
+
+                @media (max-width:815px) {
+                    width:85%;
+                }
+                @media (max-width:468px) {
+                    width:70%;
+                }
             }
         }
         
@@ -156,12 +338,42 @@
             font-weight: $font-w-700;
             margin: $m-1;
             padding: $p-1r;
+
+            @media (max-width:815px) {
+                font-weight: $font-w-500;
+                font-size: $font-26;
+            }
+            @media (max-width:468px) {
+                font-weight: $font-w-400;
+                font-size: $font-20;
+                text-align: center;
+            }
         }
         &__lists {
             @include flex_b();
+
+            @media (max-width:815px) {
+                flex-wrap: wrap;
+            }
+            @media (max-width:468px) {
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
             &_list {
                 text-align: center;
                 margin: $m-1;
+
+            }
+            &_list img {
+                width: 100%;
+               
+                @media (max-width:815px) {
+                    width: 80%;
+                }
+                @media (max-width:468px) {
+                    width: 65%;
+                }
 
             }
             &_list a {
@@ -190,10 +402,29 @@
             font-size: $font-32;
             margin: $m-1;
 
+            @media (max-width:815px) {
+                font-weight: $font-w-500;
+                font-size: $font-26;
+            }
+            @media (max-width:468px) {
+                font-weight: $font-w-400;
+                font-size: $font-20;
+                text-align: center;
+            }
+
         }
        
         &__lists {
             @include flex_b();
+
+            @media (max-width:815px) {
+                flex-wrap: wrap;
+            }
+            @media (max-width:468px) {
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
             margin: $m-1;
             &_list {
                 margin: $m-0-5;

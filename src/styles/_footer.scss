@@ -5,13 +5,34 @@
     margin: $m-1;
     margin: auto;
 
+    @media (max-width:815px) {
+        margin: $m-0-5;
+    }
+    @media (max-width:468px) {
+        margin: $m-0-5;
+    }
+
     &-column1, &-column2, &-column3 {
         
         &__lists {
             padding:$p-1r;
 
+            @media (max-width:815px) {
+                padding:$p-0-5r;
+            }
+            @media (max-width:468px) {
+                padding:$p-0-5r;
+            }
+
             &_link {
                 margin:$m-1;
+
+                @media (max-width:815px) {
+                    margin:$m-0-5;
+                }
+                @media (max-width:468px) {
+                    margin:$m-0-5;
+                }
             }
 
             &_link a {
@@ -19,6 +40,15 @@
                 text-align: center;
                 font-weight: $font-w-400;
                 font-size: $font-16;
+
+                @media (max-width:815px) {
+                    font-weight: $font-w-300;
+                    font-size: $font-12;
+                }
+                @media (max-width:468px) {
+                    font-weight: $font-w-100;
+                    font-size: $font-10;
+                }
             }
             &_link a:hover {
                 color: $yellow;
@@ -26,6 +56,15 @@
                 font-weight: $font-w-700;
                 font-size: $font-16;
                 transition: all .3s;
+
+                @media (max-width:815px) {
+                    font-weight: $font-w-400;
+                    font-size: $font-12;
+                }
+                @media (max-width:468px) {
+                    font-weight: $font-w-300;
+                    font-size: $font-10;
+                }
             }
         }
     }
@@ -33,6 +72,14 @@
         
         margin-top: -100px;
         height:200px;
+
+        @media (max-width:815px) {
+            margin-top: -20px;
+            height:200px;
+        }
+        @media (max-width:468px) {
+            height:200px;
+        }
 
         &__lists {
             height: 150px;                       
@@ -42,46 +89,130 @@
                 font-size: $font-14;
                 padding: $p-0-5r;
 
+                @media (max-width:815px) {
+                    font-weight: $font-w-400;
+                    font-size: $font-12;
+                    padding: $p-0-5r;
+                }
+                @media (max-width:468px) {
+                    font-weight: $font-w-300;
+                    font-size: $font-10;
+                    padding: $p-0-5r;
+                }
+
             }
             &_phone a {
                 color: $white;
                 font-weight: $font-w-500;
                 font-size: $font-14;
                 padding: $p-0-5r;
+
+                @media (max-width:815px) {
+                    font-weight: $font-w-400;
+                    font-size: $font-12;
+                    padding: $p-0-5r;
+                }
+                @media (max-width:468px) {
+                    font-weight: $font-w-300;
+                    font-size: $font-10;
+                    padding: $p-0-5r;
+                }
             }
             &_phone a:hover {
                 color: $yellow;
                 font-weight: $font-w-700;
                 font-size: $font-14;
                 padding: $p-0-5r;
+
+                @media (max-width:815px) {
+                    font-weight: $font-w-500;
+                    font-size: $font-12;
+                    padding: $p-0-5r;
+                }
+                @media (max-width:468px) {
+                    font-weight: $font-w-400;
+                    font-size: $font-10;
+                    padding: $p-0-5r;
+                }
             }
             &_adress {
                 color: $white;
                 font-weight: $font-w-500;
                 font-size: $font-14;
                 padding: $p-0-5r;
+
+                @media (max-width:815px) {
+                    font-weight: $font-w-300;
+                    font-size: $font-12;
+                    padding: $p-0-5r;
+                }
+                @media (max-width:468px) {
+                    font-weight: $font-w-100;
+                    font-size: $font-10;
+                    padding: $p-0-5r;
+                }
             }
             &_email a {
                 color: $white;
                 font-weight: $font-w-500;
                 font-size: $font-14;
                 padding: $p-0-5r;
+
+                @media (max-width:815px) {
+                    font-weight: $font-w-300;
+                    font-size: $font-12;
+                    padding: $p-0-5r;
+                }
+                @media (max-width:468px) {
+                    font-weight: $font-w-100;
+                    font-size: $font-10;
+                    padding: $p-0-5r;
+                }
             }
             &_email a:hover {
                 color: $yellow;
                 font-weight: $font-w-700;
                 font-size: $font-14;
                 padding: $p-0-5r;
+
+                @media (max-width:815px) {
+                    font-weight: $font-w-400;
+                    font-size: $font-12;
+                    padding: $p-0-5r;
+                }
+                @media (max-width:468px) {
+                    font-weight: $font-w-300;
+                    font-size: $font-10;
+                    padding: $p-0-5r;
+                }
             }
         }
         &__paytype {
             height: 100px;
+
+            @media (max-width:815px) {
+                height:75px;
+            }
+            @media (max-width:468px) {
+                height:50px;
+            }
 
             &_title {
                 color: $white;
                 font-weight: $font-w-700;
                 font-size: $font-14;
                 padding: $p-0-5r;
+
+                @media (max-width:815px) {
+                    font-weight: $font-w-300;
+                    font-size: $font-12;
+                    padding: $p-0-5r;
+                }
+                @media (max-width:468px) {
+                    font-weight: $font-w-100;
+                    font-size: $font-10;
+                    padding: $p-0-5r;
+                }
             }
 
             &_lists {
@@ -92,6 +223,21 @@
                     padding: $p-0;
                     margin: $m-0;
                     text-align: left;
+
+                   
+                }
+
+                &--list img {
+                    width:100%;
+
+                    @media (max-width:815px) {
+                        width:80%;
+                    }
+                    @media (max-width:468px) {
+                        width:65%;
+                    }
+
+                   
                 }
             }
         }
